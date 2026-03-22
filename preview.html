@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BROAZARTNIY</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #000;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  padding: 30px;
+  font-size: 32px;
+  color: gold;
+}
+
+.block {
+  margin: 15px;
+  padding: 20px;
+  background: #111;
+  border-radius: 15px;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  padding: 14px;
+  width: 90%;
+  background: gold;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.timer {
+  color: red;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">💰 BROAZARTNIY 💰</div>
+
+<div class="block">
+  <h3>🔥 БОНУС 500%</h3>
+  <div class="timer" id="timer">00:60</div>
+  <a class="btn" href="ССЫЛКА_КАЗИНО">🎰 ИГРАТЬ</a>
+</div>
+
+<div class="block">
+  <h3>📲 APK</h3>
+  <a class="btn" href="ССЫЛКА_APK">📥 СКАЧАТЬ</a>
+</div>
+
+<div class="block">
+  <h3>💸 ДОНАТ</h3>
+  <a class="btn" href="ССЫЛКА_ДОНАТ">💰 ПОДДЕРЖАТЬ</a>
+</div>
+
+<div class="block">
+  <h3>📢 TELEGRAM</h3>
+  <a class="btn" href="ССЫЛКА_TELEGRAM">👉 ПЕРЕЙТИ</a>
+</div>
+
+<script>
+// таймер
+let t = 60;
+setInterval(() => {
+  if (t > 0) {
+    t--;
+    document.getElementById("timer").innerText = "00:" + (t < 10 ? "0"+t : t);
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
